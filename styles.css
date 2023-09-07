@@ -1,37 +1,4 @@
-/*================================================
-0. Configuration
-================================================*/
-
-:root {
-    --primary-green: #4D6443;
-    --primary-white:#E1E8EC;
-    --gray-1: #D9D9D9;
-    --gray-2:#8E8E8E;
-    --gray-3:#4D4D4D;
-    --black: #282828;
-    --white: #FFFFFF;
-    --secondary-brown: #B07D50;
-    --secondary-green-1: #4A845B;
-    --secondary-green-2:#5B7051;
-    --secondary-beige:#CBB99D;
-    --font-primary: nunito;
-    --heading-1-size: 52px;
-    --heading-2-size: 36px;
-    --heading-3-size: 24px;
-    --heading-4-size: 18px;
-    --large-text-bold-size: 24px;
-    --large-text-regular-size: 24px;
-    --medium-text-bold-size: 18px;
-    --medium-text-regular-size: 18px;
-    --normal-text-bold-size: 16px;
-    --normal-text-regular-size: 16px;
-    --small-text-bold-size: 14px;
-    --small-text-regular-size: 14px;
-}
-
 h2{
-    color: var(--black, #000);
-    text-align: center;
     /* Heading 2 */
     font-family: Nunito;
     font-size: 36px;
@@ -40,27 +7,69 @@ h2{
     line-height: 49px; /* 136.111% */
 }
 
-
-body {
-    background-color: var(--primary-white);
-    margin: 0;
-    font-family: var(--font-primary);
-    font-size: var(--medium-text-regular-size);
+.h2-center{
+    text-align: center;
 }
-.colaboradores{
-    display: flex;
 
+.section-vision-layout {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: var(--primary-green);
 }
 
-.colaboradores-card{
+.mission-box{
+    border-radius: 25px;
+    background: var(--Secondary-Beige, #CBB99D);
+    box-shadow: 2px 11px 30px 0px rgba(0, 0, 0, 0.31);
+}
+
+.mission-box-text{
     display: flex;
+    width: 340px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-    color: var(--white, #FFF);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
     text-align: center;
+}
+
+.vision-box{
+    border-radius: 25px;
+    background: var(--Secondary-Brown, #8B6341);
+    box-shadow: 2px 11px 30px 0px rgba(0, 0, 0, 0.31);
+}
+
+.vision-box-text{
+    display: flex;
+    width: 340px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    color: var(--Primary-White, #F8F8F8);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.values-box{
+    border-radius: 25px;
+    background: var(--Primary-Green, #4D6443);
+    box-shadow: 2px 11px 30px 0px rgba(0, 0, 0, 0.31);
+    color: var(--Primary-White, #F8F8F8);
+}
+
+.values-box-text{
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
 }
