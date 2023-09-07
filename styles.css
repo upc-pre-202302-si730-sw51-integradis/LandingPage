@@ -250,3 +250,20 @@ section.pricing {
 footer{
   background-color: var(--secondary-brown);
 }
+
+.collaborators{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-green);
+}
+
+.collaborators-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: var(--White, #FFF);
+  text-align: center;
+}
