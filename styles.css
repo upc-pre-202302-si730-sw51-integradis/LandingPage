@@ -246,3 +246,7 @@ section.pricing {
     font-weight: 400;
     line-height: 33px;
 }
+
+footer{
+  background-color: var(--secondary-brown);
+}
