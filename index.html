@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Greenhouse</title>
+    <title>Register your processes with Greenhouse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Greenhouse is a web application focused on creating and storing records from the mushroom growing process"/>
+    <meta name="keywords" content="process,management,application,records,mushroom,harvest,growing"
+    <meta name="author" content="Integradis"/>
+    <meta name="copyright" content="Copyright Integradis team"/>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,7 +16,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-
+  <header>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+                <img src="images/logo-white.png" alt="company logo">
+                <p class="companyName"><a href="/">Greenhouse</a></p>
+            </div>
+            <div class="nav-links">
+                <a href="" class="learn">Learn</a>
+                <a href="" class="benefits">Benefits</a>
+                <a href="" class="about-us">About</a>
+                <a href="" class="plans">Plans</a>
+                <a href="" class="contact">Contact</a>
+                <a href="" class="faq">FAQ</a>
+                <a href="#" class="language-selector" onclick="toggleLanguageMenu()">EN <i class="fa fa-angle-down"></i></a>                    
+            </div> 
+        </div>
+        <div class="navbar-right">
+            <a href="/" class="log-in">Log in</a>
+            <button type="button" class="button-secondary float-on-hover" onclick="window.open('#')">Create account</button>
+        </div>
+    </div>
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="language-menu" id="languageMenu">
+        <div class="language-option">ES</div>
+        <div class="language-option">EN</div>
+    </div>
+  </header>
     <section class="hero">
         <div class="container">
           <div class="row py-4 py-lg-6">
