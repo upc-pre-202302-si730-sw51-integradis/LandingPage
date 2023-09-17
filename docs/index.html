@@ -16,37 +16,52 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
 <body>
-    <header>
-        <div class="navbar" id="navbar">
-            <div class="navbar-left">
-                <div class="logo">
-                    <img src="images/logo-white.png" alt="company logo">
-                    <p class="companyName"><a href="/">Greenhouse</a></p>
-                </div>
-                <div class="nav-links">
-                    <a href="#learn" class="learn">Learn</a>
-                    <a href="#benefits" class="benefits">Benefits</a>
-                    <a href="#plans" class="plans">Plans</a>
-                    <a href="#values" class="values">Values</a>
-                    <a href="#collab" class="collab">Collaborators</a>
-                    <a href="#contact" class="contact">Contact</a>
-                    <a href="#faq" class="faq">FAQ</a>
-                    <a href="#" class="language-selector" onclick="toggleLanguageMenu()">EN <i class="fa fa-angle-down"></i></a>                    
-                </div> 
-            </div>
-            <div class="navbar-right">
-                <a href="/" class="log-in">Log in</a>
-                <button type="button" class="button-secondary float-on-hover" onclick="window.open('#')">Create account</button>
-            </div>
-        </div>
-        <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
-            <i class="fa fa-bars"></i>
-        </div>
-        <div class="language-menu" id="languageMenu">
-            <div class="language-option">ES</div>
-            <div class="language-option">EN</div>
-        </div>
-    </header>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand text-decoration-none"><img src="images/logo-white.png" alt="company logo">Greenhouse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#learn" class="nav-link">Learn</a>
+          </li>
+          <li class="nav-item">
+            <a href="#benefits" class="nav-link">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a href="#plans" class="nav-link">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a href="#values" class="nav-link">Values</a>
+          </li>
+          <li class="nav-item">
+            <a href="#collab" class="nav-link">Collaborators</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="toggleLanguageMenu()">EN <i class="fa fa-angle-down"></i></a> 
+            
+          </li>
+        </ul>
+        <span class="navbar-text ">
+          <a href="/" class="log-in text-decoration-none">Log in</a>
+          <button type="button" class="button-secondary float-on-hover" onclick="window.open('#')">Create account</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div class="language-menu" id="languageMenu">
+    <div class="language-option">ES</div>
+    <div class="language-option">EN</div>
+  </div>
 
     <!-- Hero, Call to Action -->
     <section class="hero p-5" id="hero">
