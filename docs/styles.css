@@ -343,16 +343,36 @@ display: block;
 .benefits{
   text-align: center;
 }
+.section-vision-layout, .mission-box-text, .vision-box-text, .values-box-text{
+  font-family: var(--font-primary);
+  font-size: var(--large-text-regular-size);
+}
 
 section.pricing {
   background: var(--primary-green);
   color: var(--primary-white);
 }
 
+
+.pricing .basic{
+  background-color: var(--secondary-beige);
+}
+
+.pricing .regular{
+  background-color: var(--white);
+  color: var(--primary-green);
+}
+
+.pricing .premium{
+  background-color: var(--secondary-brown);
+  color: var(--white);
+}
+
 .pricing .card {
   border: none;
   border-radius: 1rem;
   transition: all 0.2s;
+  
 }
 
 .pricing hr {
@@ -388,7 +408,7 @@ section.pricing {
   border-radius: 5rem;
   letter-spacing: .1rem;
   font-weight: bold;
-  padding: 1rem;
+  padding-top: 1rem;
   opacity: 0.7;
   transition: all 0.2s;
 }
