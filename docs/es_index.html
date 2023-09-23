@@ -55,8 +55,13 @@
                         <a href="#faq" class="nav-link">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" onclick="toggleLanguageMenu()">ES <i
+                        <a class="nav-link" onclick="toggleLanguageMenu()">ES<i
                                 class="fa fa-angle-down"></i></a>
+                    </li>
+                    <li>
+                        <div class="language-menu" id="languageMenu">
+                            <div class="language-option">EN</div>
+                        </div>
                     </li>
                 </ul>
                 <span class="navbar-text ">
@@ -67,10 +72,6 @@
             </div>
         </div>
     </nav>
-    <div class="language-menu" id="languageMenu">
-        <div class="language-option">ES</div>
-        <div class="language-option">EN</div>
-    </div>
 
     <!-- Hero, Call to Action -->
     <section class="hero p-5" id="hero">
@@ -226,21 +227,26 @@
                 <img src="images/Nicolas_Espinoza.png" class="card-img-top card-img" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Nicolas Espinoza</h3>
-                    <p class="card-text">Tengo 19 años y estoy estudiando la carrera de ingeniería de software en la UPC desde el año 2021. Soy una persona creativa e imaginativa</p>
+                    <p class="card-text">Tengo 19 años y estoy estudiando la carrera de ingeniería de software en la UPC
+                        desde el año 2021. Soy una persona creativa e imaginativa</p>
                 </div>
             </div>
             <div class="card border-0 rounded-3 shadow-lg m-2">
                 <img src="images/Andres_Soto.jpg" class="card-img-top card-img" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Andrés Soto</h3>
-                    <p class="card-text">Tengo 20 años y soy estudiante de ingeniería de software de la UPC. Me gusta generar soluciones para problemas digitales, es por ello que elegí dicha carrera. Además, me considero bueno para trabajar en situaciones bajo estrés.</p>
+                    <p class="card-text">Tengo 20 años y soy estudiante de ingeniería de software de la UPC. Me gusta
+                        generar soluciones para problemas digitales, es por ello que elegí dicha carrera. Además, me
+                        considero bueno para trabajar en situaciones bajo estrés.</p>
                 </div>
             </div>
             <div class="card border-0 rounded-3 shadow-lg m-2">
                 <img src="images/Carlo_Seminario.jpg" class="card-img-top card-img" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Carlo Seminario</h3>
-                    <p class="card-text">Tengo 20 años de edad y actualmente curso el quinto ciclo de la carrera de ingeniería de software en la UPC. Considero que soy una persona que es capaz de trabajar bajo presión, además de ser responsable y perseverante</p>
+                    <p class="card-text">Tengo 20 años de edad y actualmente curso el quinto ciclo de la carrera de
+                        ingeniería de software en la UPC. Considero que soy una persona que es capaz de trabajar bajo
+                        presión, además de ser responsable y perseverante</p>
                 </div>
             </div>
         </div>
@@ -250,14 +256,16 @@
                 <img src="images/Jessica_Commetant.png" class="card-img-top card-img" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Jessica Commetant</h3>
-                    <p class="card-text">Tengo 19 años y soy estudiante de la carrera de ingeniería de software de la UPC. Estoy en el quinto ciclo de mi carrera.</p>
+                    <p class="card-text">Tengo 19 años y soy estudiante de la carrera de ingeniería de software de la
+                        UPC. Estoy en el quinto ciclo de mi carrera.</p>
                 </div>
             </div>
             <div class="card border-0 rounded-3 shadow-lg m-2">
                 <img src="images/Alan_Galavis.png" class="card-img-top card-img" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Alan Galavis</h3>
-                    <p class="card-text">Tengo 20 años y actualmente curso el sexto ciclo de la carrera de ingeniería de software en la UPC. Considero que soy organizado, perseverante y creativo</p>
+                    <p class="card-text">Tengo 20 años y actualmente curso el sexto ciclo de la carrera de ingeniería de
+                        software en la UPC. Considero que soy organizado, perseverante y creativo</p>
                 </div>
             </div>
             <div class="card border-0 z-n1">
@@ -274,7 +282,8 @@
                     class="col-lg-4 order-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start ms-lg-n6">
                     <div style="z-index:1" class="lc-block col-6 col-lg-10 mb-n3 mb-lg-0">
                         <h2>Sobre el proyecto</h2>
-                        <p>Greenhouse busca ofrecer una solución tecnológica avanzada a la industria de los hongos en el Perú.
+                        <p>Greenhouse busca ofrecer una solución tecnológica avanzada a la industria de los hongos en el
+                            Perú.
                         </p>
                     </div>
                 </div>
@@ -316,8 +325,10 @@
                                         <input class="form-control" id="emailAddress" type="email"
                                             placeholder="Email Address" data-sb-validations="required,email" />
                                         <label for="emailAddress">Correo</label>
-                                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Se requiere correo electronico</div>
-                                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">El correo electronico ingresado no es valido</div>
+                                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Se
+                                            requiere correo electronico</div>
+                                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">El correo
+                                            electronico ingresado no es valido</div>
                                     </div>
 
                                     <!-- Message Input -->
@@ -325,7 +336,8 @@
                                         <textarea class="form-control" id="message" type="text" placeholder="Message"
                                             style="height: 10rem;" data-sb-validations="required"></textarea>
                                         <label for="message">Déjanos un mensaje</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje requerido</div>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje
+                                            requerido</div>
                                     </div>
 
                                     <!-- Submit success message -->
@@ -357,7 +369,9 @@
                                     <div class="card-body">
                                         <h2 class="card-title text-center">Conéctate con nosotros en las redes sociales:
                                         </h2>
-                                        <p class="text-center">Si lo deseas también puedes contactar con nosotros a través de nuestras redes sociales. Donde respondemos dudas y resolvemos diferentes situaciones.</p>
+                                        <p class="text-center">Si lo deseas también puedes contactar con nosotros a
+                                            través de nuestras redes sociales. Donde respondemos dudas y resolvemos
+                                            diferentes situaciones.</p>
 
                                         <div class="contacto pt-5">
                                             <!-- Links -->
@@ -410,7 +424,8 @@
                             <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Registrar hasta 5 empleados
                                 </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registre hasta 365 cosechas al año</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registre hasta 365 cosechas al
+                                    año</li>
                             </ul>
                             <div class="d-grid">
                                 <a href="#" type="button" class="button-primary text-uppercase text-center">Comenzar</a>
@@ -428,7 +443,8 @@
                             <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Registrar hasta 30 empleados
                                 </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registre hasta 720 cosechas al año</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registre hasta 720 cosechas al
+                                    año</li>
                             </ul>
                             <div class="d-grid">
                                 <a href="#" type="button" class="button-primary text-uppercase text-center">Comenzar</a>
@@ -446,7 +462,8 @@
                             <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Registrar empleados ilimitados
                                 </li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Récord de cosechas ilimitadas al año</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Récord de cosechas ilimitadas
+                                    al año</li>
                             </ul>
                             <div class="d-grid">
                                 <a href="#" type="button" class="button-primary text-uppercase text-center">Comenzar</a>
@@ -474,7 +491,8 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body"> <strong>Sí, puedes cancelar tu suscripción en cualquier momento.
+                                <div class="accordion-body"> <strong>Sí, puedes cancelar tu suscripción en cualquier
+                                        momento.
                                 </div>
                             </div>
                         </div>
@@ -511,8 +529,8 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body"> <strong>Depende del plan que desea adquirir. Los puede encontrar <a
-                                            href="#plans">aqui</a></div>
+                                <div class="accordion-body"> <strong>Depende del plan que desea adquirir. Los puede
+                                        encontrar <a href="#plans">aqui</a></div>
                             </div>
                         </div>
                     </div>
@@ -537,7 +555,8 @@
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Regístrate </h6>
                         <div class="lc-block">
-                            <button type="button" class="button-secondary float-on-hover bg-white rounded-3">Crear cuenta</button>
+                            <button type="button" class="button-secondary float-on-hover bg-white rounded-3">Crear
+                                cuenta</button>
                         </div>
                         <div class="fbuttons display-7 pt-3">
                             <a href="https://www.facebook.com/"
