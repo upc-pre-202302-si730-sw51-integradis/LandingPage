@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Greenhouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Greenhouse is a web application focused on creating and storing records from the mushroom growing process" />
+    <meta name="keywords" content="process,management,application,records,mushroom,harvest,growing" <meta name="author"
+        content="Integradis" />
+    <meta name="copyright" content="Copyright Integradis team" />
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="myscripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand text-decoration-none"><img src="images/logo-white.png"
+                    alt="company logo">Greenhouse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">Conoce más</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#benefits" class="nav-link">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#values" class="nav-link">Valores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#collab" class="nav-link">Colaboradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#plans" class="nav-link">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="toggleLanguageMenu()">ES<i
+                                class="fa fa-angle-down"></i></a>
+                    </li>
+                    <li>
+                        <div class="language-menu" id="languageMenu">
+                            <div class="language-option">EN</div>
+                        </div>
+                    </li>
+                </ul>
+                <span class="navbar-text ">
+                    <a href="https://greenhouse-web.netlify.app" class="log-in text-decoration-none">Iniciar sesión</a>
+                    <button type="button" class="button-secondary float-on-hover" onclick="location.href='https://greenhouse-web.netlify.app'" role="link">Crear
+                        cuenta</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero, Call to Action -->
+    <section class="hero p-5" id="hero">
+        <div class="container p-5">
+            <div class="row py-4 py-lg-6">
+                <div
+                    class="col-lg-4 order-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start ms-lg-n6">
+                    <div style="z-index:1" class="lc-block col-6 col-lg-10 mb-n3 mb-lg-0">
+                        <img src="images/hero-image.png" alt="Image of fabrication process">
+                    </div>
+                </div>
+                <div class="col-lg-7 px-lg-5 p-4">
+                    <div class="col-lg-10 ms-lg-5">
+                        <div class="lc-block mb-4">
+                            <h1>Documenta todos los procesos de tu fábrica desde una misma plataforma</h1>
+                        </div>
+                        <div class="lc-block">
+                            <button type="button" class="button-secondary float-on-hover" onclick="location.href='https://greenhouse-web.netlify.app'" role="link">Comenzar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Information Section -->
+    <section class="learn p-5" id="learn">
+        <div class="container p-5">
+            <div class="row py-4 py-lg-6">
+                <div
+                    class="col-lg-4 order-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start ms-lg-n6">
+                    <div style="z-index:1" class="lc-block col-6 col-lg-10 mb-n3 mb-lg-0">
+                        <img src="images/welcome.png" alt="Image of fabrication process">
+                    </div>
+                </div>
+                <div class="col-lg-7 px-lg-5 p-4">
+                    <div class="col-lg-10 ms-lg-5">
+                        <div class="lc-block mb-4">
+                            <h4>CONOCE MÁS</h4>
+                            <h2>Deja atrás a los registros escritos a mano</h2>
+                            <p>Bienvenido a Greenhouse, la aplicación web que te permite supervisar y gestionar todos
+                                los procesos de tu fábrica de manera remota, por un bajo precio de suscripción.</p>
+                        </div>
+                        <div class="lc-block">
+                            <button type="button" class="button-primary float-on-hover" onclick="location.href='https://greenhouse-web.netlify.app'" role="link">Comenzar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits p-5" id="benefits">
+        <h4>NUESTROS BENEFICIOS</h4>
+        <h2>Explora todo lo que Greenhouse tiene para ofrecer</h2>
+        <div class="card-group p-5">
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/process-log.png" class="card-img-top card-img"
+                    alt="Representation image for process log">
+                <div class="card-body">
+                    <h3 class="card-title">Registro de procesos</h3>
+                    <p class="card-text">Registra el avance y estado de los procesos.</p>
+                </div>
+            </div>
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/documentation.png" class="card-img-top card-img"
+                    alt="Representation image for documentation">
+                <div class="card-body">
+                    <h3 class="card-title">Documentación</h3>
+                    <p class="card-text">Almacena toda tu información de manera rápida y segura.</p>
+                </div>
+            </div>
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/remote-monitoring.png" class="card-img-top card-img"
+                    alt="Representation image for remote monitoring">
+                <div class="card-body">
+                    <h3 class="card-title">Supervisión a distancia</h3>
+                    <p class="card-text">Recibe información completa sobre el rendimiento de tus procesos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-group p-5">
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/statistics-analysis.png" class="card-img-top card-img"
+                    alt="Representation image for statistics analysis">
+                <div class="card-body">
+                    <h3 class="card-title">Análisis de estadísticas</h3>
+                    <p class="card-text">Analiza y procesa la información recolectada.</p>
+                </div>
+            </div>
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/easy-understanding.png" class="card-img-top card-img"
+                    alt="Representation image for easy understanding">
+                <div class="card-body">
+                    <h3 class="card-title">Fácil entendimiento</h3>
+                    <p class="card-text">Cualquier persona es capaz de entender como funciona nuestra aplicación.</p>
+                </div>
+            </div>
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/flexible-plans.png" class="card-img-top card-img"
+                    alt="Representation image for flexible plans">
+                <div class="card-body">
+                    <h3 class="card-title">Planes flexibles</h3>
+                    <p class="card-text">Puedes elegir el plan que mejor se acomode a tus necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-vision-layout h2-center py-5 p-5" id="values">
+        <section class="mission-layout">
+            <h2>Misión</h2>
+            <div class="mission-box p-5">
+                <p class="mission-box-text">Revolucionar la documentación de los procesos fundamentales de las fábricas
+                    enfocadas en la producción de champiñones del Perú.</p>
+            </div>
+        </section>
+        <section class="mission-layout">
+            <h2>Visión</h2>
+            <div class="vision-box p-5">
+                <p class="vision-box-text">Convertirnos en la plataforma más destacada del mercado en materia de
+                    registro de procesos para los próximos tres años.</p>
+            </div>
+        </section>
+        <section class="mission-layout">
+            <h2>Valores</h2>
+            <div class="values-box p-4">
+                <div class="values-box-text">
+                    <ul>
+                        <li>Lealtad</li>
+                        <li>Seguridad</li>
+                        <li>Confianza</li>
+                        <li>Productividad</li>
+                        <li>Calidad</li>
+                        <li>Independencia</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="collaborators p-5" id="collab">
+        <div class="collaborators-card">
+            <h2>Algunas de las empresas que registran sus procesos con Greenhouse</h2>
+            <img src="images/CampoAlegre.png" alt="Logo of the mushrooms enterprise Campo Alegre">
+        </div>
+    </section>
+
+    <section class="benefits p-5">
+        <h2>About the team</h2>
+        <div class="card-group p-5">
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/Nicolas_Espinoza.png" class="card-img-top card-img" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Nicolas Espinoza</h3>
+                    <p class="card-text">Tengo 19 años y estoy estudiando la carrera de ingeniería de software en la UPC
+                        desde el año 2021. Soy una persona creativa e imaginativa</p>
+                </div>
+            </div>
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/Andres_Soto.jpg" class="card-img-top card-img" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Andrés Soto</h3>
+                    <p class="card-text">Tengo 20 años y soy estudiante de ingeniería de software de la UPC. Me gusta
+                        generar soluciones para problemas digitales, es por ello que elegí dicha carrera. Además, me
+                        considero bueno para trabajar en situaciones bajo estrés.</p>
+                </div>
+            </div>
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/Carlo_Seminario.jpg" class="card-img-top card-img" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Carlo Seminario</h3>
+                    <p class="card-text">Tengo 20 años de edad y actualmente curso el quinto ciclo de la carrera de
+                        ingeniería de software en la UPC. Considero que soy una persona que es capaz de trabajar bajo
+                        presión, además de ser responsable y perseverante</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-group p-5">
+
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/Jessica_Commetant.png" class="card-img-top card-img" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Jessica Commetant</h3>
+                    <p class="card-text">Tengo 19 años y soy estudiante de la carrera de ingeniería de software de la
+                        UPC. Estoy en el quinto ciclo de mi carrera.</p>
+                </div>
+            </div>
+            <div class="card border-0 rounded-3 shadow-lg m-2">
+                <img src="images/Alan_Galavis.png" class="card-img-top card-img" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Alan Galavis</h3>
+                    <p class="card-text">Tengo 20 años y actualmente curso el sexto ciclo de la carrera de ingeniería de
+                        software en la UPC. Considero que soy organizado, perseverante y creativo</p>
+                </div>
+            </div>
+            <div class="card border-0 z-n1">
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-the-project p-5" id="about-the-project">
+        <div class="container p-5">
+            <div class="row py-4 py-lg-6">
+                <div
+                    class="col-lg-4 order-lg-2 d-flex align-items-center justify-content-center justify-content-lg-start ms-lg-n6">
+                    <div style="z-index:1" class="lc-block col-6 col-lg-10 mb-n3 mb-lg-0">
+                        <h2>Sobre el proyecto</h2>
+                        <p>Greenhouse busca ofrecer una solución tecnológica avanzada a la industria de los hongos en el
+                            Perú.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 px-lg-5 p-4">
+                    <div class="col-lg-10 ms-lg-5">
+                        <div class="lc-block mb-4">
+                            <img src="images/Logo_Servicio.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact p-5" id="contact">
+        <div class="container-fluid px-5 my-5 p-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="row g-0">
+
+                                <div class="col-sm-6 p-5">
+                                    <div class="text-center">
+                                        <div class="h2">Contacto</div>
+                                    </div>
+
+                                    <!-- Name Input -->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Name"
+                                            data-sb-validations="required" />
+                                        <label for="name">Nombre</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">Nombre requerido
+                                        </div>
+                                    </div>
+
+                                    <!-- Email Input -->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="emailAddress" type="email"
+                                            placeholder="Email Address" data-sb-validations="required,email" />
+                                        <label for="emailAddress">Correo</label>
+                                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Se
+                                            requiere correo electronico</div>
+                                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">El correo
+                                            electronico ingresado no es valido</div>
+                                    </div>
+
+                                    <!-- Message Input -->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Message"
+                                            style="height: 10rem;" data-sb-validations="required"></textarea>
+                                        <label for="message">Déjanos un mensaje</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje
+                                            requerido</div>
+                                    </div>
+
+                                    <!-- Submit success message -->
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">¡Se envio el mensaje de manera correcta!</div>
+                                            <p>Para activar este formulario registrate en:</p>
+                                            <a
+                                                href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit error message -->
+                                    <div class="d-none" id="submitErrorMessage">
+                                        <div class="text-center text-danger mb-3">Error al enviar mensaje</div>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <div class="d-grid">
+                                        <button class="button-primary btn-lg disabled" id="submitButton"
+                                            type="submit">Enviar</button>
+                                    </div>
+                                    </form>
+                                    <!-- End of contact form -->
+
+                                </div>
+                                <div class="social-media col-sm-6 d-none d-sm-block p-5">
+
+                                    <div class="card-body">
+                                        <h2 class="card-title text-center">Conéctate con nosotros en las redes sociales:
+                                        </h2>
+                                        <p class="text-center">Si lo deseas también puedes contactar con nosotros a
+                                            través de nuestras redes sociales. Donde respondemos dudas y resolvemos
+                                            diferentes situaciones.</p>
+
+                                        <div class="contacto pt-5">
+                                            <!-- Links -->
+                                            <div class="">
+                                                <i class="envelope fa fa-envelope me-3 p-3"></i>
+                                                greenhouse-info@gmail.com
+                                            </div>
+                                            <div><i class="phone fa fa-phone me-3 p-3"></i>+51 999 999 999</div>
+                                        </div>
+                                        <div class="fbuttons display-5 pt-5 d-flex">
+                                            <a href="https://www.facebook.com/"
+                                                class="facebook circle-icon text-reset text-decoration-none p-2">
+                                                <i class="fa fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://twitter.com/"
+                                                class="twitter circle-icon text-reset text-decoration-none p-2">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/"
+                                                class=" instagram circle-icon text-reset text-decoration-none p-2">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/"
+                                                class="linkedin circle-icon text-reset text-decoration-none p-2">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing py-5 p-5" id="plans">
+        <h4 class="text-uppercase text-center">ELIGE TU PLAN</h4>
+        <h2 class="text center h2-center">Escoge de acuerdo a tus necesidades</h2>
+        <div class="container p-5">
+            <div class="row justify-content-center">
+                <!-- Basic Tier -->
+                <div class="col-lg-3">
+                    <div class="card basic mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase text-center">BÁSICO</h5>
+                            <h6 class="card-price text-center">S/10<span class="period">/mes</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registrar hasta 5 empleados
+                                </li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registre hasta 365 cosechas al
+                                    año</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://greenhouse-web.netlify.app" type="button" class="button-primary text-uppercase text-center">Comenzar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Regular Tier -->
+                <div class="col-lg-3">
+                    <div class="card regular mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">REGULAR</h5>
+                            <h6 class="card-price text-center">S/35.85<span class="period">/mes</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registrar hasta 30 empleados
+                                </li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registre hasta 720 cosechas al
+                                    año</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://greenhouse-web.netlify.app" type="button" class="button-primary text-uppercase text-center">Comenzar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Premium Tier -->
+                <div class="col-lg-3">
+                    <div class="card premium">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">PREMIUM</h5>
+                            <h6 class="card-price text-center">S/67.89<span class="period">/mes</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Registrar empleados ilimitados
+                                </li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Récord de cosechas ilimitadas
+                                    al año</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://greenhouse-web.netlify.app" type="button" class="button-primary text-uppercase text-center">Comenzar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq p-5" id="faq">
+        <div class="container p-5">
+            <h1 class="text-center text-uppercase mb-5">Preguntas Frecuentes</h1>
+            <br>
+            <br>
+            <div class="row flex-center">
+                <div class="col-sm-10 offset-sm-1">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span>1. ¿Puedo cancelar mi suscripción?</span> </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body"> <strong>Sí, puedes cancelar tu suscripción en cualquier
+                                        momento.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span>2. ¿Qué métodos de pago aceptan?</span> </button>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body"> <strong>Aceptamos todos los tipos de tarjetas</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span>3. ¿Puedo eliminar mi cuenta?</span> </button>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body"> <strong>Si, en cualquier momento</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span>4. ¿Cuántos empleados puedo registrar?</span> </button>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body"> <strong>Depende del plan que desea adquirir. Los puede
+                                        encontrar <a href="#plans">aqui</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start text-muted pt-3 p-5">
+        <!-- Section: Social media -->
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="links">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Regístrate </h6>
+                        <div class="lc-block">
+                            <button type="button" class="button-secondary float-on-hover bg-white rounded-3" onclick="location.href='https://greenhouse-web.netlify.app'" role="link">Crear
+                                cuenta</button>
+                        </div>
+                        <div class="fbuttons display-7 pt-3">
+                            <a href="https://www.facebook.com/"
+                                class="me-4 text-reset text-decoration-none bg-white rounded-5 p-2">
+                                <i class="fa fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/"
+                                class="me-4 text-reset text-decoration-none bg-white rounded-5  p-2">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/"
+                                class="me-4 text-reset text-decoration-none bg-white rounded-5  p-2">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/"
+                                class="me-4 text-reset text-decoration-none bg-white rounded-5  p-2">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links de apoyo
+                        </h6>
+                        <p>
+                            <a href="#hero" class="text-reset text-decoration-none">Home</a>
+                        </p>
+                        <p>
+                            <a href="#learn" class="text-reset text-decoration-none">Conoce más</a>
+                        </p>
+                        <p>
+                            <a href="#benefits" class="text-reset text-decoration-none">Beneficios</a>
+                        </p>
+                        <p>
+                            <a href="#plans" class="text-reset text-decoration-none">Planes</a>
+                        </p>
+                        <p>
+                            <a href="#values" class="text-reset text-decoration-none">Valores</a>
+                        </p>
+                        <p>
+                            <a href="#collab" class="text-reset text-decoration-none">Colaboradores</a>
+                        </p>
+                        <p>
+                            <a href="#contact" class="text-reset text-decoration-none">Contacto</a>
+                        </p>
+                        <p>
+                            <a href="#faq" class="text-reset text-decoration-none">FAQ</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p>
+                            <i class="fa fa-envelope me-3"></i>
+                            greenhouse-info@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone me-3"></i>+51 999 999 999</p>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Legal</h6>
+                        <a href="" class="text-reset text-decoration-none d-flex pb-3">
+                            Política de Privacidad
+                        </a>
+                        <a href="" class="text-reset text-decoration-none">Términos y condiciones</a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="copyright text-center p-4">
+            Â© 2023 Copyright Integradis 2023:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Todos los derechos reservados</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
